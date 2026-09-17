@@ -37,13 +37,13 @@
 
         <div class="bg-surface rounded-xl p-1 space-y-1 overflow-x-auto">
           <div class="px-4 py-2 flex items-center uppercase text-xs font-medium text-secondary">
-            <div class="w-40">Name</div>
+            <div class="w-40"><%= t("pages.dashboard.balance_sheet.name", default: "Nombre") %></div>
             <div class="ml-auto text-right flex items-center gap-6">
               <div class="w-24">
-                <p>Weight</p>
+                <p><%= t("pages.dashboard.balance_sheet.weight", default: "Peso") %></p>
               </div>
               <div class="w-40">
-                <p>Value</p>
+                <p><%= t("pages.dashboard.balance_sheet.value", default: "Valor") %></p>
               </div>
             </div>
           </div>
@@ -117,8 +117,9 @@
             icon: classification_group.icon,
           ) %>
 
-          <p class="text-primary text-sm font-medium mb-1 mt-4">No <%= classification_group.name %> yet</p>
-          <p class="text-secondary text-sm text-center"><%= "Add your #{classification_group.name} accounts to see a full breakdown" %></p>
+          <% group_label = (classification_group.classification == "asset" ? "activos" : "deudas") %>
+          <p class="text-primary text-sm font-medium mb-1 mt-4">Aún no hay <%= group_label %></p>
+          <p class="text-secondary text-sm text-center">Añade tus cuentas de <%= group_label %> para ver el desglose completo</p>
         </div>
       <% end %>
     </div>

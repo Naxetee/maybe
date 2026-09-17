@@ -1,0 +1,4 @@
+es:
+  invitation_mailer:
+    invite_email:
+      subject: "¡%{inviter} te ha invitado a unirte a su grupo familiar en Maybe!"

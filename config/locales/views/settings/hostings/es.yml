@@ -1,0 +1,41 @@
+es:
+  settings:
+    hostings:
+      invite_code_settings:
+        description: Cada nuevo usuario que se una a tu instancia de Maybe solo podrá
+          hacerlo mediante un código de invitación.
+        email_confirmation_description: Cuando está habilitado, los usuarios deben
+          confirmar su dirección de correo electrónico al cambiarla o registrarse.
+        email_confirmation_title: Requerir confirmación de correo electrónico
+        generate_tokens: Generar nuevo código
+        generated_tokens: Códigos generados
+        title: Requerir código de invitación para registrarse
+      show:
+        general: Configuración General
+        invites: Códigos de Invitación
+        title: Autoalojamiento
+        danger_zone: Zona de Peligro
+        clear_cache: Limpiar caché de datos
+        clear_cache_warning: Limpiar la caché de datos eliminará todos los tipos de
+          cambio, precios de valores, saldos de cuentas y otros datos temporales.
+          Esto no eliminará cuentas, transacciones, categorías ni otros datos del
+          usuario.
+        confirm_clear_cache:
+          title: ¿Limpiar caché de datos?
+          body: ¿Estás seguro de que deseas limpiar la caché de datos? Se eliminarán
+            tipos de cambio, precios y saldos históricos. Esta acción no se puede
+            deshacer.
+      synth_settings:
+        api_calls_used: '%{used} / %{limit} llamadas a la API utilizadas (%{percentage})'
+        description: Introduce la clave API proporcionada por Synth
+        label: Clave API
+        placeholder: Introduce tu clave API aquí
+        plan: 'Plan %{plan}'
+        title: Configuración de Synth
+      update:
+        failure: Valor de configuración no válido
+        success: Configuración actualizada
+      clear_cache:
+        cache_cleared: La caché de datos ha sido limpiada. Esto puede tardar unos
+          momentos en completarse.
+      not_authorized: No estás autorizado para realizar esta acción

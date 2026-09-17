@@ -1,0 +1,14 @@
+es:
+  sessions:
+    create:
+      invalid_credentials: Correo electrónico o contraseña no válidos.
+    destroy:
+      logout_successful: Has cerrado sesión correctamente.
+    new:
+      email: Dirección de correo electrónico
+      email_placeholder: tu@ejemplo.com
+      forgot_password: ¿Has olvidado tu contraseña?
+      password: Contraseña
+      submit: Iniciar sesión
+      title: Inicia sesión en tu cuenta
+      password_placeholder: Introduce tu contraseña
